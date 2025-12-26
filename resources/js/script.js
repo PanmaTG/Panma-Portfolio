@@ -18,7 +18,7 @@ document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', fun
 })
 
 var options = {
-    strings: ['Fullstack Web Developer', 'WinForms Developer', 'UE Modder'],
+    strings: ['Web Developer', 'WinForms Developer', 'UE Modder'],
     loop: true,
     typeSpeed: 72,
     backSpeed: 10
@@ -54,10 +54,21 @@ const projectElements = document.querySelectorAll("#projects .project-items .wra
 
 projectElements.forEach((item) => {
     item.addEventListener('click', function() {
+        // console.log(item.getAttribute('data-image'))
+        document.querySelector('#projectModal .modal-body img').setAttribute('src',  item.getAttribute('data-image'))
+        document.querySelector('#projectModal .modal-body .title').innerText = item.getAttribute('data-title')
+        document.querySelector('#projectModal .modal-body .description').innerText = item.getAttribute('data-description')
+        document.querySelector('#projectModal .modal-body .tech-used .value').innerText = item.getAttribute('data-tech-used')
+
+        document.querySelector('#projectModal .modal-body .project-link .sub-link1 a').setAttribute('href', item.getAttribute('data-project-sublink1'))
+        document.querySelector('#projectModal .modal-body .project-link .sub-link2 a').setAttribute('href', item.getAttribute('data-project-sublink2'))
+
         projectModal.show();
     })
 })
 
+
+// BLUR
 const projectModalElement = document.getElementById('projectModal')
 projectModalElement.addEventListener('show.bs.modal', event => {
     document.getElementById('projects').classList.add('blur');
