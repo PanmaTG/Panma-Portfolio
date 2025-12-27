@@ -4,6 +4,14 @@
     }
 }
 
+@media (max-width: 1199px) {
+    #careerbackground {
+        .experience {
+            margin-top: 35px;
+        }
+    }
+}
+
 
 @media (max-width: 991px) {
     #home {
@@ -130,5 +138,37 @@
             margin-top: 51px;
             margin-bottom: 45px;
         }
+    }
+
+    #careerbackground {
+        .items {
+            .item {
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: -23px;
+                    z-index: 2;
+                    margin-top: 0;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                .box:before {
+                    display: none;
+                }
+            }
+        }
+
+        .education,
+        .experience {
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+
     }
 }
