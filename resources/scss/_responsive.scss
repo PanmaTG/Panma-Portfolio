@@ -2,12 +2,28 @@
     .container {
         max-width: 1200px;
     }
+
+    #footer-bottom {
+        .real-footer {
+            p {
+               margin-bottom: 50px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1199px) {
     #careerbackground {
         .experience {
             margin-top: 35px;
+        }
+    }
+
+    #footer-bottom {
+        .real-footer {
+            p {
+               margin-bottom: 50px;
+            }
         }
     }
 }
@@ -190,7 +206,7 @@
 
     #footer-bottom {
         .real-footer {
-            margin-bottom: 32px;
+            margin-bottom: 50px;
         }
     }
 }
