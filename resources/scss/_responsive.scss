@@ -170,4 +170,21 @@
             padding-left: 12px;
         }
     }
+
+    #contacts {
+        .upper-container {
+            width: 100%;
+            flex: wrap;
+            flex-direction: column;
+            text-align: center;
+            .contact-info {
+
+                margin: 0;
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
 }
