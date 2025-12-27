@@ -1,0 +1,38 @@
+#footer-bottom {
+    min-height: 20vh;
+
+    .icons-link-footer {
+        ul {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+            padding-top: 50px;
+            margin: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none !important;
+
+                    i {
+                        font-size: 50px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .real-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50;
+    }
+}
