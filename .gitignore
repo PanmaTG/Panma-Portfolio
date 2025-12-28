@@ -1,15 +1,2 @@
-resources/scss/_about.scss
-resources/scss/_buttons.scss
-resources/scss/_careerbackground.scss
-resources/scss/_contacts.scss
-resources/scss/_fonts.scss
-resources/scss/_footer.scss
-resources/scss/_home.scss
-resources/scss/_projects.scss
-resources/scss/_reset.scss
-resources/scss/_responsive.scss
-resources/scss/_sidebar.scss
-resources/scss/_structure.scss
-resources/scss/_typeface.scss
-resources/scss/style.scss
+*.scss
 colors.txt
