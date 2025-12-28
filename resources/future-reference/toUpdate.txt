@@ -1,0 +1,3 @@
+- Light Mode
+- Download Resume
+- Up Button
