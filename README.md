@@ -24,3 +24,8 @@
 ## 👤 Contributor
   [Fiiel](https://github.com/Fiiel)
 
+
+## 📃 License
+Code released under the MIT License
+
+Built by @Fiiel for his own portfolio. **Copyright (c) 2026 by Fiiel**. 
