@@ -304,6 +304,42 @@ main > section.active {
   margin-left: -20px;
   margin-right: -20px;
 }
+#about .hero .webskills .items .item-wrapper {
+  position: relative;
+}
+#about .hero .webskills .items .item-wrapper:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-8px);
+}
+#about .hero .webskills .items .item-wrapper .tooltip {
+  position: absolute;
+  bottom: 75%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background-color: #1e1e20;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 200;
+  margin-bottom: 8px;
+}
+#about .hero .webskills .items .item-wrapper .tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1e1e20;
+}
 #about .hero .webskills .items .item {
   position: relative;
   margin-top: 10px;
@@ -344,7 +380,7 @@ main > section.active {
   transition: all 0.6s;
 }
 #about .hero .webskills .items img {
-  margin-bottom: 22x;
+  margin-bottom: 2px;
 }
 #about .hero .info h1 {
   margin-bottom: 42px;
@@ -352,6 +388,7 @@ main > section.active {
 }
 #about .hero .info p {
   max-width: 560px;
+  color: #b6b7ba;
 }
 
 #projects {
