@@ -1,6 +1,6 @@
 <h2 align="center">
   Panma<br/>
-  <a href="https://fiiels-portfolio.netlify.app" target="_blank">fiiels-portfolio.netlify.app</a>
+  <a href="https://panmatg-portfolio.netlify.app" target="_blank">panmatg-portfolio.netlify.app</a>
 </h2>
 <h4 align="center">Portfolio Website</h4>
 <div align="center">
@@ -28,4 +28,4 @@
 ## License
 Code released under the MIT License
 
-Built by @Fiiel for his own portfolio. **Copyright (c) 2026 by Fiiel**. 
+Built by @PanmaTG for his own portfolio. **Copyright (c) 2026 by Fiiel**. 
