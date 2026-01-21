@@ -212,7 +212,7 @@ main > section.active {
 #home .info .typefield {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 #home .info .typefield h2 {
   color: #b6b7ba;
@@ -718,6 +718,7 @@ main > section.active {
 #footer-bottom .real-footer p {
   font-size: 15px !important;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 @media (max-width: 1400px) {
