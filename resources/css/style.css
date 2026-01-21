@@ -209,6 +209,10 @@ main > section.active {
 #home .info h1 span {
   color: #b6b7ba;
 }
+#home .info h3 {
+  color: #b6b7ba;
+  margin-bottom: 10px;
+}
 #home .info .typefield {
   display: flex;
   align-items: center;
