@@ -682,17 +682,26 @@ main > section.active {
 }
 #contacts .upper-container .contact-info p a {
   text-decoration: none;
-  color: rgba(255, 196, 0, 0.9921568627);
+  color: rgba(255, 196, 0, 0.6235294118);
   background-color: transparent;
+  transition: all 0.3s;
+}
+#contacts .upper-container .contact-info i {
+  font-size: 32px;
+  cursor: default;
+  color: #b6b7ba;
+  transition: all 0.3s;
 }
 #contacts .upper-container .contact-info:hover {
   background: #1e1e20;
   border-radius: 6px;
   transition: all 0.3s;
 }
-#contacts .upper-container .contact-info i {
-  font-size: 32px;
-  cursor: default;
+#contacts .upper-container .contact-info:hover a {
+  color: rgba(255, 196, 0, 0.9921568627);
+}
+#contacts .upper-container .contact-info:hover i {
+  color: #fff;
 }
 
 #footer-bottom {
