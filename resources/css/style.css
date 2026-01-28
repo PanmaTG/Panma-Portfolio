@@ -718,7 +718,12 @@ main > section.active {
   text-decoration: none !important;
 }
 #footer-bottom .icons-link-footer ul li a i {
+  color: #b6b7ba;
   font-size: 50px !important;
+}
+#footer-bottom .icons-link-footer ul li a i:hover {
+  color: #fff;
+  border-radius: 6px;
 }
 #footer-bottom .real-footer {
   display: flex;
