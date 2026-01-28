@@ -729,6 +729,7 @@ main > section.active {
 #footer-bottom .icons-link-footer ul li a i {
   color: #b6b7ba;
   font-size: 50px !important;
+  transition: all 0.3s;
 }
 #footer-bottom .icons-link-footer ul li a i:hover {
   color: #fff;
