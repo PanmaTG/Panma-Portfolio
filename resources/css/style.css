@@ -321,8 +321,8 @@ main > section.active {
   bottom: 75%;
   left: 50%;
   transform: translateX(-50%) translateY(0);
-  background-color: #1e1e20;
-  color: #ffffff;
+  background-color: #fff;
+  color: #1e1e20;
   padding: 8px 16px;
   border-radius: 6px;
   font-size: 14px;
@@ -342,7 +342,7 @@ main > section.active {
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #1e1e20;
+  border-top-color: #fff;
 }
 #about .hero .webskills .items .item {
   position: relative;
