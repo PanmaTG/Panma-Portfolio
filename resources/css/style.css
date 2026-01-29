@@ -751,6 +751,15 @@ main > section.active {
   text-align: center;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -784,6 +793,12 @@ main > section.active {
   }
 }
 @media (max-width: 767px) {
+  body.modal-open {
+    padding-right: 0 !important;
+  }
+  * {
+    max-width: 100%;
+  }
   #sidebar {
     background: black;
     padding-right: 60px;
