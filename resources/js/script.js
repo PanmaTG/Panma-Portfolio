@@ -27,9 +27,14 @@ var options = {
 new Typed('.typefield h2', options);
 
 
-const shuffleInstance = new Shuffle(document.querySelector('#projects .project-items'), {
+const element = document.querySelector('.project-items');
+const shuffleInstance = new Shuffle(element, {
     itemSelector: '.item',
+    sizer: '.item',
+    speed: 400,
+    easing: 'ease-out',
 });
+
 
 const filterButtons = document.querySelectorAll('#projects .filters button')
 
