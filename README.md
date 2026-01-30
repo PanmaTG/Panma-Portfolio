@@ -26,6 +26,5 @@
 
 
 ## License
-Code released under the MIT License
-
-Built by @PanmaTG for his own portfolio. **Copyright (c) 2026 by Fiiel**. 
+Code released under the MIT License <br/>
+Copyright (c) 2026 **Built by @PanmaTG** for his own portfolio. 
