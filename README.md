@@ -22,7 +22,7 @@
   - Utilizes [ShuffleJS](https://shuffle.js.org)
 
 ## Contributor
-  [Fiiel](https://github.com/Fiiel)
+  [PanmaTG](https://github.com/PanmaTG)
 
 
 ## License
