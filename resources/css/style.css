@@ -856,6 +856,12 @@ main {
     font-size: 16px;
     padding-bottom: 10px;
   }
+  #about .tooltip {
+    max-width: unset !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+    white-space: nowrap !important;
+  }
   .modal#projectModal .modal-dialog .modal-content .modal-body img {
     height: unset;
   }
