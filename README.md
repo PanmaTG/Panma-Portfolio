@@ -4,7 +4,7 @@
 </h2>
 <h4 align="center">Portfolio Website</h4>
 <div align="center">
-  <img src="./resources/imgs-readme/fiiel-portfolio-first-image.png" alt="fiiel img"/>
+  <!-- <img src="./resources/imgs-readme/fiiel-portfolio-first-image.png" alt="fiiel img"/> -->
 </div>
 
 ## Built With
@@ -12,7 +12,7 @@
   ![Static Badge](https://img.shields.io/badge/css-663399?style=for-the-badge&logo=css)
   ![Static Badge](https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
   ![Static Badge](https://img.shields.io/badge/javascript-222?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-  ![Static Badge](https://img.shields.io/badge/visual_studio_code-0085d1?style=for-the-badge)
+  [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vsc&logoColor=white)](#)
 
 ## Features
   - Fully responsive website
