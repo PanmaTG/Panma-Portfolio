@@ -19,7 +19,7 @@ document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', fun
 })
 
 
-// --- TYPING ANIMATION ---
+// --- TYPING ANIMATION IN LANDING PAGE---
 var options = {
     strings: ['Web Developer', 'WinForms Developer', 'UE Modder'],
     loop: true,
@@ -30,7 +30,7 @@ var options = {
 new Typed('.typefield h2', options);
 
 
-// --- FILTERING / SHUFFLEJS ---
+// --- FILTERING / SHUFFLEJS IN PROJECTS SECTION---
 const element = document.querySelector('.project-items');
 const shuffleInstance = new Shuffle(element, {
     itemSelector: '.item',
