@@ -1,3 +1,5 @@
+
+// --- SIDEBAR NAVIGATION LINKS ---
 let navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach((item) => {
@@ -11,12 +13,13 @@ navLinks.forEach((item) => {
 })
 
 
-
-
+// --- SIDEBAR TOGGLING WHEN SCREEN IS SMALL ---
 document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', function(){
     document.querySelector('#sidebar').classList.toggle('open')
 })
 
+
+// --- TYPING ANIMATION ---
 var options = {
     strings: ['Web Developer', 'WinForms Developer', 'UE Modder'],
     loop: true,
@@ -27,6 +30,7 @@ var options = {
 new Typed('.typefield h2', options);
 
 
+// --- FILTERING / SHUFFLEJS ---
 const element = document.querySelector('.project-items');
 const shuffleInstance = new Shuffle(element, {
     itemSelector: '.item',
@@ -34,7 +38,6 @@ const shuffleInstance = new Shuffle(element, {
     speed: 400,
     easing: 'ease-out',
 });
-
 
 const filterButtons = document.querySelectorAll('#projects .filters button')
 
@@ -54,6 +57,8 @@ function workFilter() {
     shuffleInstance.filter(clickedButtonGroup)
 }
 
+
+// --- PROJECT MODAL ---
 const projectModal = new bootstrap.Modal(document.getElementById('projectModal'))
 const projectElements = document.querySelectorAll("#projects .project-items .wrap");
 
@@ -109,14 +114,15 @@ projectElements.forEach((item) => {
 })
 
 
-// BLUR
-const projectModalElement = document.getElementById('projectModal')
-projectModalElement.addEventListener('show.bs.modal', event => {
-    document.getElementById('projects').classList.add('blur');
-    document.getElementById('sidebar').classList.add('blur');
-})
 
-projectModalElement.addEventListener('hide.bs.modal', event => {
-    document.getElementById('projects').classList.remove('blur');
-    document.getElementById('sidebar').classList.remove('blur');
-})
+// --- BLUR (DOES NOT WORK) ---
+// const projectModalElement = document.getElementById('projectModal')
+// projectModalElement.addEventListener('show.bs.modal', event => {
+//     document.getElementById('projects').classList.add('blur');
+//     document.getElementById('sidebar').classList.add('blur');
+// })
+
+// projectModalElement.addEventListener('hide.bs.modal', event => {
+//     document.getElementById('projects').classList.remove('blur');
+//     document.getElementById('sidebar').classList.remove('blur');
+// })
