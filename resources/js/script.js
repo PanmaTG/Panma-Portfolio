@@ -59,14 +59,50 @@ const projectElements = document.querySelectorAll("#projects .project-items .wra
 
 projectElements.forEach((item) => {
     item.addEventListener('click', function() {
-        // console.log(item.getAttribute('data-image'))
-        document.querySelector('#projectModal .modal-body img').setAttribute('src',  item.getAttribute('data-image'))
-        document.querySelector('#projectModal .modal-body .title').innerText = item.getAttribute('data-title')
-        document.querySelector('#projectModal .modal-body .description').innerText = item.getAttribute('data-description')
-        document.querySelector('#projectModal .modal-body .tech-used .value').innerText = item.getAttribute('data-tech-used')
 
-        document.querySelector('#projectModal .modal-body .project-link .sub-link1 a').setAttribute('href', item.getAttribute('data-project-sublink1'))
-        document.querySelector('#projectModal .modal-body .project-link .sub-link2 a').setAttribute('href', item.getAttribute('data-project-sublink2'))
+        document.querySelector('#projectModal .modal-body img')
+            .setAttribute('src', item.getAttribute('data-image'))
+
+        document.querySelector('#projectModal .modal-body .title')
+            .innerText = item.getAttribute('data-title')
+
+        document.querySelector('#projectModal .modal-body .description')
+            .innerText = item.getAttribute('data-description')
+
+        document.querySelector('#projectModal .modal-body .tech-used .value')
+            .innerText = item.getAttribute('data-tech-used')
+
+        const github = item.getAttribute('data-project-sublink1');
+        const live = item.getAttribute('data-project-sublink2');
+        const liveLabel = item.getAttribute('data-project-sublink2-label');
+
+        const githubContainer = document.querySelector('#projectModal .sub-link1');
+        const liveContainer = document.querySelector('#projectModal .sub-link2');
+
+        const githubLink = githubContainer.querySelector('a');
+        const liveLink = liveContainer.querySelector('a');
+
+        // For GitHub link
+        if (github && github.trim() !== "") {
+            githubLink.setAttribute('href', github);
+            githubContainer.style.display = "block";
+        } else {
+            githubContainer.style.display = "none";
+        }
+
+        // For Live link
+        if (live && live.trim() !== "") {
+            liveLink.setAttribute('href', live);
+
+            // Change text if label exists, otherwise default to "Live"
+            liveLink.innerText = liveLabel && liveLabel.trim() !== "" 
+                ? liveLabel 
+                : "Live";
+            liveContainer.style.display = "block";
+            
+        } else {
+            liveContainer.style.display = "none";
+        }
 
         projectModal.show();
     })
