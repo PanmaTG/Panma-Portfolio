@@ -878,6 +878,10 @@ main {
   .modal#projectModal .modal-dialog .modal-content .modal-body .left {
     padding-right: 0;
   }
+  .modal#projectModal .modal-dialog .modal-content .modal-body .left p {
+    line-height: 150%;
+    font-size: 18px;
+  }
   .modal#projectModal .modal-dialog .modal-content .modal-body .right {
     padding-left: 0;
     padding-top: 32px;
